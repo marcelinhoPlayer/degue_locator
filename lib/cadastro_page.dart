@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class CadastroPage extends StatelessWidget {
+  CadastroPage({super.key});
   final TextEditingController _controladorNome = TextEditingController();
   final TextEditingController _controladorQuantidade = TextEditingController();
   final TextEditingController _controladorValor = TextEditingController();
@@ -15,13 +16,13 @@ class CadastroPage extends StatelessWidget {
             children: <Widget>[
               TextField(
                 controller: _controladorNome,
-                decoration: InputDecoration(labelText: 'Nome'),
+                decoration: const InputDecoration(labelText: 'Nome'),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 16.0),
                 child: TextField(
                   controller: _controladorQuantidade,
-                  decoration: InputDecoration(labelText: 'Quantidade'),
+                  decoration: const InputDecoration(labelText: 'Quantidade'),
                   keyboardType: TextInputType.number,
                 ),
               ),
@@ -29,7 +30,7 @@ class CadastroPage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 16.0),
                 child: TextField(
                   controller: _controladorValor,
-                  decoration: InputDecoration(labelText: 'Valor'),
+                  decoration: const InputDecoration(labelText: 'Valor'),
                   keyboardType: TextInputType.number,
                 ),
               ),

@@ -1,8 +1,12 @@
-import 'package:degue_locator/cadastro_page.dart';
-import 'package:degue_locator/login_page.dart';
+import 'package:degue_locator/widget_tree.dart';
 import 'package:flutter/material.dart';
+import 'firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Dengue Locator",
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: const WidgetTree(),
     );
   }
 }
