@@ -44,13 +44,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDdRjqfBHbTsdinC58y2PLyjntNIYyXux4',
-    appId: '1:886691144291:web:8608451243243196bc8e56',
-    messagingSenderId: '886691144291',
-    projectId: 'dengue-locator-1',
-    authDomain: 'dengue-locator-1.firebaseapp.com',
-    storageBucket: 'dengue-locator-1.appspot.com',
-    measurementId: 'G-KLK5VDPLYW',
+    apiKey: "AIzaSyBaeOJucw5hEqmTPuLRSLUEmDjVwAAFsPc",
+    authDomain: "dengue-locator-1-58d80.firebaseapp.com",
+    projectId: "dengue-locator-1-58d80",
+    storageBucket: "dengue-locator-1-58d80.appspot.com",
+    messagingSenderId: "766965573463",
+    appId: "1:766965573463:web:bfe0045d831ee49c808012",
+    measurementId: "G-KXXKZW5JGT",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
