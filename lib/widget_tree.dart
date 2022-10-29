@@ -1,5 +1,5 @@
 import 'package:degue_locator/auth.dart';
-import 'package:degue_locator/cadastro_page.dart';
+import 'package:degue_locator/chatbot.dart';
 import 'package:degue_locator/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class _WidgetTreeState extends State<WidgetTree> {
       stream: Auth().authStateChanges,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return CadastroPage();
+          return const ChatBot();
         } else {
           return const LoginPage();
         }

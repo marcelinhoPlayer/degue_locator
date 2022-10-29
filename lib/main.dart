@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Dengue Locator",
+    return const MaterialApp(
+      title: "Aleatory Bot Locator",
       debugShowCheckedModeBanner: false,
-      home: const WidgetTree(),
+      home: WidgetTree(),
     );
   }
 }

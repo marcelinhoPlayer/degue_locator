@@ -113,8 +113,8 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 30,
             ),
-            _entryField('email', _controllerEmail),
-            _entryField('password', _controllerPassword),
+            _entryField('Email', _controllerEmail),
+            _entryField('Senha', _controllerPassword),
             _errorMessage(),
             const Padding(padding: EdgeInsets.all(12)),
             _submitButton(),
